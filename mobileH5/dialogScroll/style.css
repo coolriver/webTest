@@ -1,0 +1,94 @@
+*  {
+    padding: 0;
+    margin: 0;
+}
+
+.banner {
+    height: 100px;
+    width: 100%;
+    background: blue;
+    font-size: 18px;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+}
+
+.content {
+    background: fff;
+    height: 800px;
+    width: 100%;
+}
+
+#mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 5;
+}
+
+.dialog {
+    width: 80%;
+    position: fixed;
+    left: 10%;
+    top: 50%;
+    background: #fff8c8;
+    border-radius: 8px;
+    -webkit-transform: translate(0, -50%);
+    z-index: 10;
+}
+
+.dialog-head {
+    height: 40px;
+    background: #ffeeb0;
+    border-radius: 8px 8px 0 0;
+}
+
+.dialog-body {
+    min-height: 100px;
+    max-height: 200px;
+    overflow: scroll;
+}
+
+li {
+    list-style: none;
+    height: 40px;
+    margin: 0 10px;
+    border-bottom: 1px solid #ffeeb0;
+}
+
+.dialog-foot {
+    height: 40px;
+    background: #ffeeb0;
+    border-radius: 0 0 8px 8px;
+}
+
+.dialog-foot a {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    color: #ff8634;    
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.dialog-foot a:last-child {
+    border-left: 1px solid #fff;
+    margin-left: -1px;
+}
+
+.scroll-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
