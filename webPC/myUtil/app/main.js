@@ -17,9 +17,25 @@ define(function(require, exports, module) {
 		console.log(event);
 	})
 	var a=new Number("abc")
-	console.log(util.isNumber(a));
+	console.log(util.isNumber(a));*/
 
-	util.addComputedProp();*/
+	util.addComputedProp();
+	var man = {
+	  firstName: 'Tony',
+	  lastName: 'Stark',
+	  name: function() {
+	    if(arguments.length > 0) {
+	      var parts = arguments[0].toString().split(/ /);
+	      this.firstName = parts[0];
+	      this.lastName = parts[1] ? parts[1] : this.lastName;
+	    }
+	    return this.firstName + ' ' + this.lastName;
+	  }.computed()
+	};
+	man.computize();
+	console.log(man.name);
+
+
 	var ball1 = document.getElementById("ball1");
 	var ball2 = document.getElementById("ball2");
 	var ball3 = document.getElementById("ball3");
