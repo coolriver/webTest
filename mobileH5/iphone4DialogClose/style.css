@@ -92,3 +92,23 @@ html, body {
     height: 100%;
     overflow: hidden;
 }
+
+.dialog .pl-close{
+    position: absolute;
+    top: -.9rem;
+    right: -1rem;
+    width: 0;
+    height: 0;
+    display: block;
+    border: 1.4rem solid #ffe38d;
+    border-radius: 1.4rem;
+    z-index: 12;
+}
+
+.dialog .pl-close i{
+        position: absolute;
+        top: -1.5rem;
+        left: -1rem;
+        color: #e39c3f;
+        font-size: 2rem;
+    }

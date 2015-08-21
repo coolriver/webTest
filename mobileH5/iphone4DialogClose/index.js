@@ -26,15 +26,38 @@ $(function () {
 
       //  unlockBody();
     }).on('touchmove', function (e) {
-        console.log("body touchmove");
-    });
-
-    $('.dialog-body').on('touchmove', 'li' , function (e) {
-        console.log("dialog scroll");
-        e.stopPropagation();
+        /*console.log("body touchmove");*/
     });
 
 
+
+$body.append('<div class="dialog">\
+        <a href="javascript:;" class="js-close pl-close"><i class="i-close icon-font"></i></a>\
+        <div class="dialog-head">\
+            \
+        </div>\
+        <div class="dialog-body">\
+            <ul>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+                <li>aaaaaaaaa</li>\
+            </ul>\
+        </div>\
+        <div class="dialog-foot">\
+            <a class="yes" href="javascript:;">确定</a>\
+            <a class="close" href="javascript:;">关闭</a>\
+        </div>\
+    </div>');
 
    // lockBody();
 
